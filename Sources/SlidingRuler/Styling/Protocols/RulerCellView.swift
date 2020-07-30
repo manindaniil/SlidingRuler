@@ -60,7 +60,7 @@ extension RulerCellView {
                 .clipShape(maskShape)
             scale
                 .equatable()
-                .foregroundColor(.init(.tertiaryLabel))
+                .foregroundColor(.init(.clear))
         }
         .frame(width: cellWidth)
     }
