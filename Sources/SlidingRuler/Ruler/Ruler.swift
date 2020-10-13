@@ -43,7 +43,7 @@ struct Ruler: View, Equatable {
             ForEach(self.cells) { cell in
                 VStack {
                     self.style.makeCellBody(configuration: self.configuration(forCell: cell))
-                    Text(cell.id)
+                    Text("\(cell.id)")
                 }
             }
         }
