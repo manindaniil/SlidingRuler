@@ -43,11 +43,9 @@ struct Ruler: View, Equatable {
             ForEach(self.cells) { cell in
                 VStack {
                     self.style.makeCellBody(configuration: self.configuration(forCell: cell))
-                    if cell.id == 0 { 
-                        Circle()
-				            .fill(Color.red)
-				            .frame(width: 11.0, height: 11.0, alignment: .center)
-                    }
+                    Circle()
+			.fill(cell.id == 0 ? Color.red : Color.clear)
+			.frame(width: 11.0, height: 11.0, alignment: .center)
                 }
             }
         }
